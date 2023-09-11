@@ -1,0 +1,13 @@
+function is_palindrome(word):
+    // Base case: An empty word or a word containing a single character is a palindrome
+    if length (word) <= 1 then
+        return True
+    end if
+    // Compare the first and last characters of the word
+    if word[0] = word[-1] then
+        // Recursively check the rest of the word
+        return is_palindrome(word[1:-1])
+    else:
+        // If the first and last characters are different, it's not a palindrome
+        return False
+    end if
